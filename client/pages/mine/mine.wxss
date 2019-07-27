@@ -1,0 +1,86 @@
+/* pages/mine/mine.wxss */
+@import"../../template/cBox/cBox.wxss";
+@import"../../template/topper/topper.wxss";
+.up{
+  background-image: src="";
+}
+.mineCon{
+  background-color: rgb(237, 236, 232);
+}
+
+.personalInfo{
+  width:100vw;
+  height: 16vh;
+  display: flex;
+  padding: 10px 18px;
+  /* background-color: #fff; */
+  margin: 3px 0 3px 0;
+}
+
+.personalInfo .infoLeft{
+  flex:2;
+  height: 11vh;
+  margin-right: 3vw;
+  padding: 2vh 2vw;
+}
+.personalInfo .infoLeft .infoIcon{
+  /* height: 80px;
+  width: 80px;
+  border-radius: 100%; */
+  width: 140rpx;
+  height: 140rpx;
+  /* margin: 20rpx; */
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.personalInfo .infoMore{
+  flex:7;
+  margin-left: 3vw;
+  position: relative;
+  height: 15vh;
+}
+
+.personalInfo .infoMore .nickName{
+  position: absolute;
+  top:3vh;
+  font-size: 24px;
+}
+
+.personalInfo .infoMore .infoLikes{
+  position: absolute;
+  bottom:1vh;
+  font-size: 14px;
+  color:rgba(98, 105, 108);
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+}
+.personalInfo .infoMore .infoLikes>text{
+  display: block;
+  margin: 8px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+
+/* 内容区 */
+.content .contentNav{
+  
+  display: flex;
+  background-color: #fff;
+}
+ 
+.content .contentNav .collection{
+  flex: 1;
+  margin:0 16px 0 20px; 
+  padding: 0;
+}
+.content .contentNav .broHistory{
+  flex: 1;
+  margin:0 16px 0 16px;
+  padding: 0;
+}
+.content .contentNav .conNone{
+  flex: 6;
+}

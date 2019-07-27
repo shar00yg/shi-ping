@@ -1,0 +1,37 @@
+<!--template/cBox/cBox.wxml-->
+
+<template name="cBox">
+  <view class="cBox">
+      <!-- 头部 -->
+    <view class='cBox-top'>
+      <view class='cBoxCon'>
+        <text class='title'>{{title}}</text>
+        <text class='boxContent'>{{boxContent}}</text>
+      </view>
+      
+      <image class='pic' src="{{imageSrc}}"></image>
+    </view>
+    <!-- 底部 -->
+    <view class='cBox-foot'>
+      <!-- 浏览 -->
+      <button class='pageviews'>
+        <image src='/images/pageviews.png'></image>
+      </button>
+      <text class='pageview'>{{pageviews}}</text>
+
+      <text class='none'></text>
+      <!-- 点赞 -->
+      <button class='like'>
+        <image src='/images/like.png'></image>  
+      </button>
+      <text class='likes'>{{likes}}</text>
+      <!-- 评论 -->
+      <button class='comments'>
+        <image src='/images/comments.png'></image>
+      </button>
+      <text class='comment'>{{comments}}</text>
+    </view>
+  </view>
+</template>
+
+

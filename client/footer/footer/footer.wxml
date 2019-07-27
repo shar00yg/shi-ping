@@ -1,0 +1,7 @@
+<!--footer/footer/footer.wxml-->
+<view>
+  <view>发现</view>
+  <view>社区</view>
+  <view>我的</view>
+
+</view>

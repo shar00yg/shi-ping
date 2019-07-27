@@ -1,0 +1,26 @@
+<!--pages/community/community.wxml-->
+<import src="../../template/topper/topper.wxml" />
+<import src="../../template/areaBox/areaBox.wxml" />
+<!-- 头部 -->
+<view class='top'>
+  <template is="topper" 
+    data="{{lBtn1: '民大',lBtn2: '周边'}}"/>
+</view>
+
+<!-- 顶部导航条 -->
+<view class='topNav'>
+  <button class='ask'>你问</button>
+  <button class='vote'>投票</button>
+  <button class='new'>新店</button>
+  <button class='answer'>我答</button>
+</view>
+
+<view class='area'>
+  <view class='southArea'>
+    <template is="areaBox" data="{{areaNS:'南区'}}"/>
+  </view>
+  <view class='northArea'>
+    <template is="areaBox" data="{{areaNS:'北区'}}"/>
+  </view>
+
+</view>

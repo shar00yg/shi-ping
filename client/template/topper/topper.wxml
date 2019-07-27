@@ -1,0 +1,18 @@
+<!--template/topper/topper.wxml-->
+  <template name='topper'>
+    <view class='topper'>
+      <button class='lBTn1'>{{lBtn1}}</button>
+      <button class='lBtn2'>{{lBtn2}}</button>
+      <text></text>
+      <button class='search'>
+        <image src="/images/search.png"></image>
+      </button>
+      <button class='msgs'>
+        <image src="/images/msgs.png"></image>
+      </button>
+    </view>
+  </template>
+
+
+
+

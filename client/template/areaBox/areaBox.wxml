@@ -1,0 +1,10 @@
+<!--template/areaBox/areaBox.wxml-->
+<template name="areaBox">
+  <view class='areaBox'>
+    <view class='aBoxTop'>{{areaNS}}</view>
+    <view class='aBoxCon'>
+      <text>校内</text>
+      <text>校外</text>
+    </view>
+  </view>
+</template>

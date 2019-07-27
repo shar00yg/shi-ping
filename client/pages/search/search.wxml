@@ -1,0 +1,25 @@
+<!--pages/search/search.wxml-->
+<import src="../../template/topper/topper.wxml" />
+<import src="../../template/cBox/cBox.wxml" />
+<!-- 头部 -->
+<view class='top'>
+  <template is="topper" 
+    data="{{lBtn1: '民大',lBtn2: '周边'}}"/>
+</view>
+<!-- 展示栏 -->
+
+<view class='shower'>
+  <image class='showPicSrc' src="{{showPicSrc}}"></image>
+  <text class='showTitle'>{{showTitle}}</text>
+  <text class='showId'>{{showId}}</text>
+</view>
+
+<!-- 内容容器 -->
+<view  class='container'>
+  <view class='container-nav' wx:for="{{items}}" wx:key="msgs" data="items">
+    <template is="cBox" 
+      data="{{...item}}"/>
+    
+  </view>
+</view>
+

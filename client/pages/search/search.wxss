@@ -1,0 +1,46 @@
+/* pages/search/search.wxss */
+@import"../../template/cBox/cBox.wxss";
+@import"../../template/topper/topper.wxss";
+
+.top{
+  height:34px;
+}
+
+.shower{
+  height: 31vh;
+  position: relative;
+}
+.shower .showPicSrc{
+  position: absolute;
+  right: 1vw;
+  height: 31vh;
+  width: 98vw;
+}
+.shower .showTitle{
+  position: absolute;
+  bottom: 2.8vh;
+  width: 100vw;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  color: #fff;
+}
+.shower .showId{
+  position: absolute;
+  color: #fff;
+  bottom: 0.6vh;
+  width: 100vw;
+  text-align: center;
+  font-size: 10px;
+}
+
+.container{
+  width: 100vw;
+  background-color: rgb(237, 236, 232);
+  
+}
+.container .container-nav{
+  width: 98%;
+  margin:3px 2px 0 2px;
+  border-radius: 4px;
+}

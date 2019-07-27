@@ -1,0 +1,49 @@
+/* pages/community/community.wxss */
+@import"../../template/topper/topper.wxss";
+@import"../../template/areaBox/areaBox.wxss";
+
+/* 顶部导航条 */
+.topNav>button{
+  margin: 0 18px;
+  padding: 0;
+  height: 6vh;
+  width: 6vw;
+  line-height: 6vh;
+  /* background: #fff; */
+}
+.topNav{
+  display: flex;
+  background: #eee;
+}
+
+.topNav .ask{
+  flex:1;
+}
+.topNav .vote{
+  flex:1;
+}
+.topNav .new{
+  flex:1;
+}
+.topNav .answer{
+  flex:1;
+}
+
+/*  */
+.area{
+  margin-top: 2px;
+  display: flex;
+  width: 100vw;
+}
+
+.area .northArea{
+  flex: 1;
+}
+
+.area .southArea{
+  flex: 1;
+}
+.area .areaBox{
+  background-color: #eee;
+  margin: 0 12.5vw;
+}

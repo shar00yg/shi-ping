@@ -1,0 +1,66 @@
+.cBox{
+  border-radius: 4px;
+  background-color: #fff;
+}
+.cBox-top{
+  height:16vh;
+  width:100vw;
+  display: flex;
+  margin: 4px;
+}
+.cBox-top .cBoxCon{
+  flex:5;
+  position: relative;
+}
+.cBox-top .pic{
+  flex: 3;
+  height: 100%;
+}
+.cBox-top .cBoxCon .title{
+  height: 4vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+}
+.cBox-top .cBoxCon .boxContent{
+  height: 12vh;
+  overflow: scroll;
+  position: absolute;
+  bottom: 0;
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+}
+
+
+.cBox-foot{
+  height: 4vh;
+  display: flex;
+  width:100vw;
+}
+
+.cBox-foot>button{
+  flex: 1;
+  height:100%;
+  margin-right: 4px;
+  margin-left: 4px;
+  padding: 0;
+  position: relative;
+}
+.cBox-foot>button>image{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.cBox-foot>text{
+  flex: 1;
+  font-size: 12px;
+  height: 28px;
+  line-height: 28px;
+}
+.cBox-foot .none{
+  flex: 4
+}

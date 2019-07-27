@@ -1,0 +1,20 @@
+/* template/topper/topper.wxss */
+.topper{
+  display: flex;
+  height: 34px;
+}
+.topper >button{
+  flex:1;
+  font-size: 14px;
+  padding: 0 5px 0 5px;
+  width:40px;
+}
+.topper >text{
+  flex: 5;
+}
+.topper >button>image{
+  display: block;
+  width:20px;
+  height: 20px;
+  padding: 7px;
+}

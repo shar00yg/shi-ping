@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/community/community",
+    "pages/mine/mine",
+    "pages/search/search",
+    "template/cBox/cBox",
+    "template/topper/topper",
+     "template/areaBox/areaBox" 
+    
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/search/search",
+        "text": "发现",
+        "iconPath":"/images/glass.png",
+        "selectedIconPath":"/images/sGlass.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "社区",
+        "iconPath": "/images/chopsticks.png",
+        "selectedIconPath":"/images/sChopsticks.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/bowl.png",
+        "selectedIconPath":"/images/sBowl.png"
+      }
+    ]
+  }
+  ,
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "食评",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

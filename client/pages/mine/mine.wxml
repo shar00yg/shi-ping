@@ -1,0 +1,39 @@
+<!--pages/mine/mine.wxml-->
+<import src="../../template/topper/topper.wxml" />
+<import src="../../template/cBox/cBox.wxml" />
+<view class='up' style="background-image: url(./footBckg.png)">
+  <!-- 头部 -->
+  <!-- <image src="./footBck.png" style="index : 0"></image> -->
+  <view class='top'>
+    <template is="topper" 
+      data="{{lBtn1: '我的',lBtn2: '动态'}}"/>
+  </view>
+  <!-- 个人资料 -->
+    <view class='personalInfo'>
+      <view class='infoLeft' bindtap='logIn'>
+        <image class='infoIcon' style="background-image: url({{infoIcon}})"></image>
+      </view>
+
+      <view class='infoMore'>
+        <text class='nickName'>{{nickName}}</text>
+        <view class='infoLikes'>获赞<text>{{infoLikes}}</text></view>
+    </view>
+</view>
+
+
+</view>
+<view class='mineCon'>
+  <!-- 内容区 -->
+  <view class='content'>
+
+    <view class='contentNav'>
+      <button class='collection'>收藏</button>
+      <button class='broHistory'>历史</button>
+      <text class='conNone'></text>
+    </view>
+    <view class='contentInfo' wx:for="{{items}}" wx:key="msgs" data="items">
+      <template is="cBox" data="{{...item}}"/>
+    </view>
+
+  </view>
+</view>
