@@ -1,0 +1,28 @@
+<!--template/aBox/aBox.wxml-->
+
+<template name='aBox'>
+  <view class='aBox'>
+  <!-- 左，图片展示 -->
+    <view class='lPic'>
+      <image src='{{lPicSrc}}'></image>
+    </view>
+  
+
+  
+  <!-- 右，简介 -->
+    <view class='rIntroduction'>
+      <view class='rtitle'>{{rtitle}}</view>
+      <text class='Address'>地点：{{rAddress}}</text>
+      <text class='shopName'>店名：{{shopName}}</text>
+      <view class='Price'><text>价格:</text><text class='price'>{{price}}</text></view>
+      <view class='RRindex'><text>推荐指数：</text><text class='Rindex'>{{Rindex}}</text></view>
+
+    </view>
+  
+  </view>
+
+
+
+
+
+</template>

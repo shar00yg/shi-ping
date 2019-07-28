@@ -1,26 +1,41 @@
 <!--pages/community/community.wxml-->
 <import src="../../template/topper/topper.wxml" />
 <import src="../../template/areaBox/areaBox.wxml" />
+<import src="../../template/cBox/cBox.wxml" />
 <!-- 头部 -->
 <view class='top'>
   <template is="topper" 
-    data="{{lBtn1: '民大',lBtn2: '周边'}}"/>
+    data="{{lBtn1: '排行',lBtn2: '百科'}}"/>
 </view>
 
-<!-- 顶部导航条 -->
-<view class='topNav'>
-  <button class='ask'>你问</button>
-  <button class='vote'>投票</button>
-  <button class='new'>新店</button>
-  <button class='answer'>我答</button>
+<!-- 搜索 -->
+<view class='searchBar'>
+  <image class='searchIcon' src='/images/search.png'></image><input class='inputSearch' value='去哪儿吃？'></input>
 </view>
 
-<view class='area'>
+<!-- 悬浮可展开按钮 -->
+<menu bindmenuItemClick="menuItemClick" mainmodel="{{mainmodel}}" menulist ="{{menulist}}" ></menu>
+
+<!-- 内容容器 -->
+<view  class='container'>
+  <view class='container-nav' wx:for="{{items}}" wx:key="msgs" data="items">
+    <template is="cBox" 
+      data="{{...item}}"/>
+    
+  </view>
+</view>
+
+
+
+
+
+<!-- 分区板块 -->
+<!-- <view class='area'>
   <view class='southArea'>
     <template is="areaBox" data="{{areaNS:'南区'}}"/>
   </view>
   <view class='northArea'>
     <template is="areaBox" data="{{areaNS:'北区'}}"/>
-  </view>
+  </view> -->
 
-</view>
+<!-- </view> -->

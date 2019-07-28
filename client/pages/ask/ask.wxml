@@ -1,0 +1,14 @@
+<!--pages/ask/ask.wxml-->
+<import src="../../template/topperWrite/topperWrite.wxml" />
+
+<!-- 头部 -->
+<view class='top'>
+  <template is="topperWrite" 
+    data="{{topTitle:'提问'}}"/>
+</view>
+
+<view class='askTitle'></view>
+
+<view class='askBody'></view>
+
+<view class='touchToPic'>图</view>

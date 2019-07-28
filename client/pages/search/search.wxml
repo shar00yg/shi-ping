@@ -1,6 +1,6 @@
 <!--pages/search/search.wxml-->
 <import src="../../template/topper/topper.wxml" />
-<import src="../../template/cBox/cBox.wxml" />
+<import src="../../template/aBox/aBox.wxml" />
 <!-- 头部 -->
 <view class='top'>
   <template is="topper" 
@@ -17,7 +17,7 @@
 <!-- 内容容器 -->
 <view  class='container'>
   <view class='container-nav' wx:for="{{items}}" wx:key="msgs" data="items">
-    <template is="cBox" 
+    <template is="aBox" 
       data="{{...item}}"/>
     
   </view>

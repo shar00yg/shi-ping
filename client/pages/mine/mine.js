@@ -51,30 +51,64 @@ Page({
       },
     ]
   },
-
+  //显示头像、昵称
+  showInfoIcon: function (number, res) {
+    switch (number) {
+      case '1': { this.setData({ nickName: res.userInfo.nickName }) }
+      case '2': { this.setData({ infoIcon: res.userInfo.avatarUrl }) }
+    }
+    
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-  },
-  logIn(o){
-    // 登录
-    wx.getSetting({
-      success: res => {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
-          wx.getUserInfo({
+    var that =this
+    //显示头像、昵称
+    wx.getStorage({
+      
+      key: 'loggedYN',
+      success: function (res) {
+        if(res.data==='Y'){
+          wx.getSetting({
             success: res => {
-              //console.log(res);
-              this.setData({
-                infoIcon: res.userInfo.avatarUrl,
-                nickName: res.userInfo.nickName,
-              });
+              if (res.authSetting['scope.userInfo']) {
+                // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
+                wx.getUserInfo({
+                  success: res => {
+                    //console.log(res);
+                    that.setData({
+                      infoIcon: res.userInfo.avatarUrl,
+                      nickName: res.userInfo.nickName,
+                    });
+                  }
+                });
+              }
             }
           });
-        }
-      }
-    });
+          wx.getStorage({
+            key: 'nickName',
+            success: function (res) {
+              // console.log(res);
+              that.setData({ 
+                nickName: res.data
+              });
+            },
+          });
+          wx.getStorage({
+            key: 'infoIcon',
+            success: function (res) {
+              that.setData({
+                infoIcon: res.data
+              });
+            },
+          })
+        };
+        
+
+      },
+    })
+    
   }
+
 })
