@@ -1,0 +1,13 @@
+<!--template/topperWrite/topperWrite.wxml-->
+<!-- <text>template/topperWrite/topperWrite.wxml</text> -->
+<template name="topperWrite">
+  <view class='topperWrite'>
+    <view></view>
+    <text>{{topTitle}}</text>
+    <button class='touchSend'>发送</button>
+  
+  </view>
+
+
+
+</template>

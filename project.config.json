@@ -3,7 +3,16 @@
 	"svr": "server/",
 	"miniprogramRoot": "client/",
 	"qcloudRoot": "server/",
-	"setting": {},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
 	"appid": "wx899bbdcd2d28050b",
 	"projectname": "shi-ping",
 	"simulatorType": "wechat",

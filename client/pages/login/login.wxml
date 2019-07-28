@@ -1,6 +1,6 @@
 <!--pages/login/login.wxml-->
 
-<view wx:if="{{!isHide}}">
+<view wx:if="{{isHide}}">
     <view wx:if="{{canIUse}}" >
         <view class='header'>
             <image src='/images/wx_login.png'></image>
@@ -17,3 +17,4 @@
     </view>
     <view wx:else>请升级微信版本</view>
 </view>
+<view wx:else=""></view>

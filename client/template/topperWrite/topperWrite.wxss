@@ -1,0 +1,24 @@
+/* template/topperWrite/topperWrite.wxss */
+.topperWrite{
+  height: 34px;
+  display: flex;
+}
+
+.topperWrite>text{
+  flex: 9;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+
+}
+.topperWrite .touchSend{
+  flex: 1;
+  font-size: 16px;
+  height: 34px;
+  line-height: 34px;
+  
+}
+.topperWrite>view{
+  flex: 1;
+  padding: 0 14px;
+}

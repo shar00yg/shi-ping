@@ -1,4 +1,5 @@
 /* pages/community/community.wxss */
+@import"../../template/cBox/cBox.wxss";
 @import"../../template/topper/topper.wxss";
 @import"../../template/areaBox/areaBox.wxss";
 
@@ -29,8 +30,47 @@
   flex:1;
 }
 
+
+/* searchBar */
+
+.searchBar{
+  display: flex;
+  flex-direction:row;
+  width: 100vw;
+  height: 6vh;
+  background-color: #eee;
+  border-radius: 18px;
+}
+.searchBar .searchIcon{
+  margin: 10px;
+  width:20px;
+  height: 20px;
+}
+.searchBar .inputSearch{
+  flex: 8;
+  height: 6vh;
+  color: #ccc;
+}
+
+/* 容器 */
+.container{
+  margin-top: 3px;
+  width: 100vw;
+  background-color: rgb(237, 236, 232);
+  
+}
+.container .container-nav{
+  width: 98%;
+  margin:3px 2px 0 2px;
+  border-radius: 4px;
+}
+
+
+
+
+
 /*  */
-.area{
+/* .area{
   margin-top: 2px;
   display: flex;
   width: 100vw;
@@ -46,4 +86,4 @@
 .area .areaBox{
   background-color: #eee;
   margin: 0 12.5vw;
-}
+} */

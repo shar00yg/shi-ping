@@ -10,7 +10,7 @@
   </view>
   <!-- 个人资料 -->
     <view class='personalInfo'>
-      <view class='infoLeft' bindtap='logIn'>
+      <view class='infoLeft' bindtap='showInfoIcon'>
         <image class='infoIcon' style="background-image: url({{infoIcon}})"></image>
       </view>
 

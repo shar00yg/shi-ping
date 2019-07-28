@@ -1,0 +1,36 @@
+/* components/menu/menu.wxss */
+
+
+
+.menu_box{
+  position: fixed;
+  bottom: 150rpx;
+  right: 30rpx;
+  /* background-color: red; */
+  text-align: center;
+  background-color: #eee;
+  border-radius: 26px;
+}
+.menu_main{
+  position:relative; 
+  /* top: 10rpx; */
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.menu_img{
+  position: absolute;
+  /* margin-top: 10rpx; */
+  width: 50rpx;
+  height: 50rpx;
+  left:50%;top:50%;transform:translate(-50%,-50%);
+/* background-color: red; */
+}
+.menu_title{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+
+}

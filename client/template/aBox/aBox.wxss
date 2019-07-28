@@ -1,0 +1,45 @@
+/* template/aBox/aBox.wxss */
+.aBox{
+  width: 96vw;
+  height: 20vh;
+  display: flex;
+  background-color: #fff;
+  margin:1vh 1vw ;
+  border-radius: 4px;
+}
+
+.aBox .lPic{
+  flex: 1;
+  height: 100%;
+
+}
+
+.aBox .lPic>image{
+  height: 100%;
+  width: 56vw
+}
+
+
+.aBox .rIntroduction{
+  margin-left: 4px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.aBox .rIntroduction>text{
+  flex: 1;
+  font-size: 12px;
+}
+.aBox .rIntroduction .rtitle{
+  font-size: 18px;
+  height: 4vh;
+  width:32vw ;
+  line-height: 4vh;
+  /* overflow:hidden;  */
+
+  text-overflow:ellipsis;
+
+  white-space:nowrap; 
+
+}

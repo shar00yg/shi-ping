@@ -1,12 +1,17 @@
 {
   "pages": [
+    
+    "pages/ask/ask",
     "pages/login/login",
-    "pages/community/community",
+    "pages/community/community","components/menu/menu",
     "pages/mine/mine",
     "pages/search/search",
     "template/cBox/cBox",
+    "template/topperWrite/topperWrite",
     "template/topper/topper",
-     "template/areaBox/areaBox" 
+    "template/areaBox/areaBox" ,
+    "template/aBox/aBox"
+    
     
   ],
   "tabBar": {
