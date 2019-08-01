@@ -7,8 +7,27 @@
     data="{{topTitle:'提问'}}"/>
 </view>
 
-<view class='askTitle'></view>
 
-<view class='askBody'></view>
+<view class='askTitle'>
+  <text>标题：</text>
+  <input value='请填写内容'></input>
+</view>
+
+<view>
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+
+<view class='addTopics'>
+  <text>添加话题：</text>
+  <input value='美食'></input>
+</view>
+
+<view>
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+
+<view class='askBody'>{{askBody}}</view>
 
 <view class='touchToPic'>图</view>

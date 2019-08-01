@@ -1,7 +1,7 @@
 /* pages/search/search.wxss */
 @import"../../template/aBox/aBox.wxss";
 @import"../../template/topper/topper.wxss";
-
+@import"../../template/goodsCard/goodsCard.wxss";
 .top{
   height:34px;
 }
@@ -39,8 +39,9 @@
   background-color: rgb(237, 236, 232);
   
 }
-.container .container-nav{
+/* .container .container-nav{
   width: 98%;
   margin:0 3vw ;
 
-}
+} */
+

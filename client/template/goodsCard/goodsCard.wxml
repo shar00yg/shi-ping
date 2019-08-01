@@ -1,0 +1,53 @@
+<!--template/goodsCard/goodsCard.wxml-->
+<template name="goodsCard">
+
+
+<!-- 内容 -->
+<view 
+  class='goodsCardCentent'
+  style='width:{{itemWidth}}px;' 
+>
+  <image 
+    class='card-img' 
+    mode='aspectFill' 
+    
+    src='{{img}}' 
+    lazy-load>
+  </image>
+  <view 
+    class='cardWord'
+    
+  >
+    <view class='rtitle'>{{rtitle}}</view>
+    <text class='Address'>地点：{{rAddress}}</text>
+    <!-- <text class='shopName'>店名：{{shopName}}</text> -->
+    <view class='cardMid'>
+      <view class='Price'><text>￥</text><text class='price'>{{price}}</text></view>
+      <view class='RRindex'><text>评分：</text><text class='Rindex'>{{Rindex}}</text></view>
+    </view>
+  </view>
+</view>
+  
+ <!-- 底部 -->
+    <view 
+      class='cBox-foot'
+      style='width:{{itemWidth}}px' 
+    > 
+      <!-- 发表用户ID -->
+      <text class='goodCardID'>{{goodCardID}}</text>
+
+
+      <text class='none'></text>
+      <!-- 点赞 -->
+      <button class='like'>
+        <image src='/images/like.png'></image>  
+      </button>
+      <text class='likes'>{{likes}}</text>
+      <!-- 评论 -->
+      <button class='comments'>
+        <image src='/images/comments.png'></image>
+      </button>
+      <text class='comment'>{{comments}}</text>
+    </view>
+
+</template>

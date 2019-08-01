@@ -1,16 +1,19 @@
 {
   "pages": [
     
-    "pages/ask/ask",
-    "pages/login/login",
+    
+    "pages/login/login","pages/ask/ask",
     "pages/community/community","components/menu/menu",
     "pages/mine/mine",
     "pages/search/search",
-    "template/cBox/cBox",
+    "components/WaterFallView/WaterFallView",
     "template/topperWrite/topperWrite",
     "template/topper/topper",
     "template/areaBox/areaBox" ,
-    "template/aBox/aBox"
+    "template/aBox/aBox",
+    "template/goodsCard/goodsCard",
+    "template/cBox/cBox"
+    
     
     
   ],

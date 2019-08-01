@@ -16,10 +16,12 @@
 
 <!-- 内容容器 -->
 <view  class='container'>
-  <view class='container-nav' wx:for="{{items}}" wx:key="msgs" data="items">
+  <!-- <view class='container-nav' wx:for="{{items}}" wx:key="msgs" data="items">
     <template is="aBox" 
       data="{{...item}}"/>
     
-  </view>
+  </view> -->
+
+  <waterFallView bintap="" class='waterFallView' id='waterFallView'></waterFallView>
 </view>
 

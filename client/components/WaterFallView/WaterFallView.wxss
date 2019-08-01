@@ -1,0 +1,25 @@
+/* component/WaterFallView/WaterFallView.wxss */
+@import"../../template/goodsCard/goodsCard.wxss";
+.fall-container {
+  width: 100%;
+  display: flex;
+}
+
+.fall-left {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* margin-left: 20rpx; */
+}
+
+.fall-right {
+  width: 50vw;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* margin-right: 20rpx; */
+}
+.fall{
+  margin: 4px 2vw;
+}

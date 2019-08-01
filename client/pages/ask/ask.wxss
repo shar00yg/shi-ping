@@ -1,2 +1,22 @@
 /* pages/ask/ask.wxss */
 @import"../../template/topperWrite/topperWrite.wxss";
+
+.askTitle{
+  height: 12vh;
+  display: flex;
+}
+.askTitle>text{
+  flex: 1;
+  height: 12vh;
+  line-height: 12vh;
+  font-size: 26px;
+  margin-left: 8px;
+}
+.askTitle>input{
+  flex: 1
+}
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height: 3rpx;
+}

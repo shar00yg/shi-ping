@@ -3,5 +3,8 @@ App({
   onLaunch: function () {
     
     
-  }
+  },
+  // onUnload: function () {
+  //   wx.clearStorage;
+  // },
 })
