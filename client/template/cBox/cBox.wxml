@@ -1,6 +1,6 @@
 <!--template/cBox/cBox.wxml-->
 
-<!-- <template name="cBox"> -->
+<template name="cBox">
   <view class="cBox">
       <!-- 头部 -->
     <view class='cBox-top'>
@@ -32,6 +32,6 @@
       <text class='comment'>{{comments}}</text>
     </view>
   </view>
-<!-- </template> -->
+</template>
 
 

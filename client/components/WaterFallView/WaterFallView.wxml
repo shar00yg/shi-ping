@@ -5,14 +5,14 @@
   <view class='fall-left'>
     <view class="fall" wx:for="{{leftList}}" wx:key="leftList">
       <!--瀑布流内容卡片-->
-      <template is='goodsCard' data="{{...item}}" />
+      <template is='goodsCard' bindtap="touchToInfo" data="{{...item}}" />
     </view>
   </view>
   <!--右边一列 -->
   <view class='fall-right'>
     <view  class="fall" wx:for="{{rightList}}" wx:key="{{item.id}}" data="rightList">
       <!--瀑布流内容卡片-->
-      <template is='goodsCard' data="{{...item}}" />
+      <template is='goodsCard' bindtap="touchToInfo" data="{{...item}}" />
     </view>
   </view>
 

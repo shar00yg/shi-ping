@@ -1,18 +1,25 @@
 {
   "pages": [
     
-    
-    "pages/login/login","pages/ask/ask",
-    "pages/community/community","components/menu/menu",
+    "pages/login/login",
+    "pages/ask/ask",
+    "pages/community/community",
     "pages/mine/mine",
     "pages/search/search",
+    "pages/rank/rank",
+    "pages/contentInfo/contentInfo",
+
     "components/WaterFallView/WaterFallView",
+    "components/menu/menu",
+
+
     "template/topperWrite/topperWrite",
     "template/topper/topper",
     "template/areaBox/areaBox" ,
     "template/aBox/aBox",
     "template/goodsCard/goodsCard",
     "template/cBox/cBox"
+
     
     
     
@@ -24,6 +31,12 @@
         "text": "发现",
         "iconPath":"/images/glass.png",
         "selectedIconPath":"/images/sGlass.png"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "排行",
+        "iconPath": "/images/bowl.png",
+        "selectedIconPath": "/images/sBowl.png"
       },
       {
         "pagePath": "pages/community/community",

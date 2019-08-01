@@ -13,10 +13,39 @@
   margin-left: 8px;
 }
 .askTitle>input{
-  flex: 1
+  flex: 4;
+  height: 12vh;
+  line-height: 12vh;
 }
+
+.addTopics{
+  margin-left: 2px;
+  display: flex;
+}
+.addTopics>text .addTopics>text{
+  flex: 1;
+}
+.topicPlus{
+  width: 18px;
+  height: 18px;
+  margin-right: 1px;
+  padding-top: 2px;
+}
+
 .divLine{
  background: #E0E3DA;
  width: 100%;
  height: 3rpx;
+ position: relative
+}
+
+/* .chooseTopics{
+  height: 40px;
+} */
+.touchToPic{
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  position: absolute;
+  bottom: 20px;
 }

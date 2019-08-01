@@ -48,5 +48,10 @@ Component({
         rightList: rightList,
       });
     },
+    touchToInfo: function(){
+      wx.navigateTo({
+        url: '../contentInfo/contentInfo',
+      })
+    }
   }
 })

@@ -115,13 +115,17 @@ Page({
    */
   onLoad: function (options) {
     this.setData();
-    
+    this.TouchToInfo();
     this.FillData(false, this.data.goods)
     
   },
   FillData: function (isFull, goods) {
     let view = this.selectComponent('#waterFallView');
     view.fillData(isFull, goods);
+  },
+  TouchToInfo: function(){
+    let view = this.selectComponent('#waterFallView');
+    console.log(view.touchToInfo);
   }
   ,
   onPullDownRefresh: function () {

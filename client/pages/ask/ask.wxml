@@ -10,7 +10,7 @@
 
 <view class='askTitle'>
   <text>标题：</text>
-  <input value='请填写内容'></input>
+  <input placeholder='请输入标题'></input>
 </view>
 
 <view>
@@ -19,8 +19,17 @@
 </view>
 
 <view class='addTopics'>
-  <text>添加话题：</text>
-  <input value='美食'></input>
+  <image class='topicPlus' src='/images/topicPlus.png'></image>
+  <text class='topics'>添加话题：</text>
+  <input value='{{theTopics}}' placeholder='约饭 找吃的'></input>
+  <!-- <picker-view class='chooseTopics' indicator-style="height: 50px;" bindchange="bindChange" value="{{value}}">
+    <picker-view-column>
+      <view wx:for="{{topics}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{topics}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+  </picker-view> -->
 </view>
 
 <view>
@@ -28,6 +37,6 @@
   <view class="divLine"></view>
 </view>
 
-<view class='askBody'>{{askBody}}</view>
+<textarea class='askBody' placeholder='请输入内容' maxlength='200' adjust-position='true' value='{{thebody}}'>{{askBody}}</textarea>
 
-<view class='touchToPic'>图</view>
+<image src='/images/uploadPic.png' class='touchToPic' bindtap='bindChooicePictures'></image>

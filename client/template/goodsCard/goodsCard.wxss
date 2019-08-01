@@ -1,18 +1,18 @@
 /* template/goodsCard/goodsCard.wxss */
 .card-img{
-  width:46vw;
+  width:47vw;
   height: 26vh;
   border-radius: 6px;
 }
 .cardWord{
   margin: 0;
   font-family: arial;
-  height: 60px;
+  height: 56px;
   width: 46vw
 }
 .rtitle{
   margin-left: 4px;
-  font-size: 18px;
+  font-size: 14px;
   
 }
 .Address{
